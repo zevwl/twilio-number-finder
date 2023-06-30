@@ -56,9 +56,9 @@ export default function Home() {
       }
     } catch (error) {
       console.log(error)
+      setNoResultsMessage('Error occurred, check logs for details.')
     } finally {
       setIsSearchingNumbers(false)
-      setNoResultsMessage('Error occurred, check logs for details.')
     }
   }
 
